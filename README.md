@@ -42,7 +42,7 @@ mkdir build && cd build
 cmake ..
 make -j4
 ./MinecraftClone
-
+```
 If you're using Visual Studio Code, launch using the .vscode/launch.json.
 
 ## Controls
