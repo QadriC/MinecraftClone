@@ -3,6 +3,7 @@ A simple voxel-based world written in C++ using OpenGL, inspired by Minecraft.
 It features real-time terrain generation, chunk loading, textured blocks, and a basic HUD.
 
 ## Screenshots
+
 ### Building with blocks
 ![Building with blocks](media/screenshot1.png)
 
@@ -80,3 +81,8 @@ If you're using Visual Studio Code, launch using the .vscode/launch.json.
 ├── .vscode/       # VSCode config (optional)
 └── CMakeLists.txt # Build configuration
 ```
+
+## Notes
+
+If you are using a virtual machine, there might be problems recieving mouse inputs for camera rotation.
+Consider disabling mouse integration or use the key arrows instead.
