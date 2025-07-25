@@ -4,6 +4,13 @@ It features real-time terrain generation, chunk loading, textured blocks, and a 
 
 ## Screenshots
 
+![Building with blocks](media/screenshot1.png)
+
+![Postprocess effect underwater](media/screenshot2.png)
+
+![Seeded terrain generation](media/screenshot3.png)
+
+![Digging a hole](media/screenshot4.png)
 
 ---
 
@@ -58,6 +65,7 @@ If you're using Visual Studio Code, launch using the .vscode/launch.json.
 | `Left Click`  | Break block           |
 | `Right Click` | Place block           |
 | `1 - 8`       | Change selected block |
+| `TAB`         | Toggle mesh view      |
 
 ## Project Structure
 
@@ -67,5 +75,5 @@ If you're using Visual Studio Code, launch using the .vscode/launch.json.
 ├── src/           # Source code
 ├── textures/      # Texture atlas and images
 ├── .vscode/       # VSCode config (optional)
-├── CMakeLists.txt # Build configuration
+└── CMakeLists.txt # Build configuration
 ```
