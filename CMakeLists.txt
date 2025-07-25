@@ -25,3 +25,15 @@ pkg_search_module(GLFW REQUIRED glfw3)
 
 target_include_directories(MinecraftClone PRIVATE ${GLFW_INCLUDE_DIRS})
 target_link_libraries(MinecraftClone ${OPENGL_LIBRARIES} ${GLFW_LIBRARIES})
+
+add_custom_command(TARGET MinecraftClone POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_directory
+        ${CMAKE_SOURCE_DIR}/shaders
+        $<TARGET_FILE_DIR:MinecraftClone>/shaders
+)
+
+add_custom_command(TARGET MinecraftClone POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_directory
+        ${CMAKE_SOURCE_DIR}/textures
+        $<TARGET_FILE_DIR:MinecraftClone>/textures
+)
